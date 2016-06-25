@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>juego</title>
+</head>
+<body>
+  <h1><%= session[:jugador1] %> vs <%= session[:jugador2] %></h1>
+  <h2><%= session[:marcador] %></h2>
+  <form action="/marcar/j1" method="post">
+    <input type="submit" value="j1" name ="j1">
+  </form>
+</body>
+</html>
